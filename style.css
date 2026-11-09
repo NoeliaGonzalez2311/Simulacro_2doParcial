@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* HEADER */
+
+header {
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo h1 {
+  font-size: 26px;
+  color: white;
+  white-space: nowrap;
+}
+
+.logo h1 span {
+  color: #d01418;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.carrito {
+  color: #d01418;
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hamb {
+  display: none;
+  color: white;
+  background: transparent;
+  border: 0;
+  padding: 8px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* BANNER PRINCIPAL */
+
+.Fondo {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.Fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.texto-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+.texto-banner h2 {
+  font-size: 26px;
+}
+
+.texto-banner h2 span {
+  color: #d01418;
+}
+
+.boton-comprar {
+  display: inline-block;
+  background-color: #d01418;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin-top: 20px;
+}
+
+/* TITULOS */
+
+h2 {
+  text-align: center;
+}
+
+.productos-destacados h2,
+.productos-estrellas h2 {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.productos-destacados {
+  background-color: #f2f2f2;
+  padding: 30px 15px 40px;
+}
+
+.contenedor-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 3px;
+  width: 220px;
+}
+.card hr {
+  border: none;
+  border-top: 1px solid #999999;
+  margin: 15px -15px;
+}
+
+.card img {
+  max-width: 100%;
+  display: block;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.envio {
+  color: #619d00;
+}
+
+/* PRODUCTOS ESTRELLAS */
+
+.productos-estrellas {
+  background-color: #f2f2f2;
+  padding: 45px 9% 80px;
+}
+
+.contenedor-estrellas {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.estrella {
+  width: 44%;
+  height: 135px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.estrella img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.estrella p {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #222222;
+  color: white;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 8%;
+  min-height: 180px;
+}
+
+/* LOGO FOOTER */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 40px;
+}
+
+.footer-logo h2 {
+  font-size: 22px;
+  color: white;
+}
+
+.footer-logo span {
+  color: #d01418;
+}
+
+/* REDES SOCIALES */
+
+.redes {
+  text-align: center;
+}
+
+.redes h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.iconos-redes a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.twitter {
+  color: #14aed0;
+}
+
+.facebook {
+  color: #1476d0;
+}
+
+.instagram {
+  color: #ce0cff;
+}
+
+/* DERECHOS RESERVADOS */
+
+.derechos {
+  background-color: #dddddd;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
+
+/* VERSION CELULAR */
+
+@media (max-width: 760px) {
+  /* HEADER */
+
+  header {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .hamb {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  nav.open {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .carrito {
+    display: none;
+  }
+
+  /* BANNER */
+
+  .Fondo {
+    height: 310px;
+  }
+
+  .texto-banner h2 {
+    font-size: 22px;
+  }
+
+  /* TITULOS */
+
+  .productos-destacados h2,
+  .productos-estrellas h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* TARJETAS */
+
+  .productos-destacados {
+    padding: 25px 15px 30px;
+  }
+
+  .contenedor-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card hr {
+    width: 70%;
+    max-width: 220px;
+  }
+
+  /* PRODUCTOS ESTRELLAS */
+
+  .productos-estrellas {
+    padding: 25px 20px 35px;
+  }
+
+  .contenedor-estrellas {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .estrella {
+    width: 100%;
+    height: auto;
+  }
+
+  .estrella img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .estrella p {
+    font-size: 14px;
+    right: 10px;
+  }
+
+  /* FOOTER CELULAR */
+
+  .footer-contenido {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 10px;
+    min-height: auto;
+  }
+
+  .footer-logo {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .footer-logo img {
+    width: 25px;
+  }
+
+  .footer-logo h2 {
+    font-size: 16px;
+  }
+
+  .redes {
+    text-align: center;
+  }
+
+  .redes h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .iconos-redes {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .iconos-redes a {
+    font-size: 18px;
+  }
+
+  .derechos {
+    font-size: 9px;
+  }
+}
